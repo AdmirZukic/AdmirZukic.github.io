@@ -784,8 +784,7 @@ section.about {
     margin-left: 50px; }
   section.about .home-lead {
     margin-left: 90px;
-    padding-bottom: 180px;
-    text-align: inherit; }
+    padding-bottom: 180px; }
 
 @media (max-width: 640px) {
   section.about h2 {
