@@ -1,0 +1,50 @@
+section.skills
+  background: white
+
+.skill-lockup
+  max-width: 540px
+  margin: 30px auto
+  color: #999
+  +clearfix
+
+
+  .skill-unit
+    width: 270px
+    float: left
+
+  .skill-icons
+    font-size: 0
+    margin: 3px 0 10px
+
+    span
+      display: inline-block
+      +size(14px)
+      background-color: $accent-color
+      margin-right: 8px
+      border-radius: 50%
+
+      &:after
+        content: ''
+        display: block
+        +size(10px)
+        background: #fff
+        border-radius: 50%
+        margin: 2px
+
+    @for $i from 1 through 10
+      &.skill-#{$i} span:nth-child(n+#{$i+1})
+        @extend %skill-color
+
+
+%skill-color
+  background: #ccc
+
+
+
+
+@media screen and (max-width: 541px)
+  .skill-lockup
+    width: 220px
+
+    .skill-unit
+      width: 220px

@@ -1,0 +1,35 @@
+<section class="skills">
+
+  <div class="flex flex--center">
+    <div class="col-50 flex flex--center">
+      <div class="col-1">
+        <p class="home-lead outdented">
+          {{ site.data.settings.blurb }}
+        </p>
+      </div> <!-- end col 50 flex flex center -->
+    </div> <!-- end col 1 -->
+
+    <div class="col-50">
+      {% if site.data.settings.skills %}
+
+      <div class="skill-lockup">
+
+        {% for skill in site.data.settings.skills %}
+
+          <div class="skill-unit">
+            <div class="skill-label">{{ skill.name }}</div>
+            <div class="skill-icons skill-{{ skill.value }}">
+              {% for i in (1..10) %}
+                <span></span>
+              {% endfor %}
+            </div> <!-- end skill icons -->
+          </div> <!-- end skill unit -->
+
+        {% endfor %}
+
+      </div> <!-- end skill lockup -->
+
+      {% endif %}
+    </div> <!-- end col 50 -->
+  </div> <!-- end flex center -->
+</section>
