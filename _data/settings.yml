@@ -52,9 +52,17 @@ skills:
 # Work Section
 
 projects:
-- {name: AtZiMedia Logo Concept, folder: 'proj-1'}
+- {name: AtZiMedia Logo Concept, folder: 'proj-1', file: 'work/proj-1.html'}
 - {name: Leptirela Logo Concept, folder: 'proj-2'}
 - {name: Kajak Kanu Klub Ključ Website Maintenance, folder: 'proj-3'}
 - {name: GetSetPet UK Website Maintenance, folder: 'proj-4'}
 - {name: Cart by Call Website Development, folder: 'proj-5'}
-- {name: Lenient Website Development, folder: 'proj-6'}
+- {name: Infoline Team Website Development, folder: 'proj-6'}
+- {name: Lenient Website Development, folder: 'proj-7'}
+- {name: Rieber Services Website Mockup, folder: 'proj-8'}
+
+#-------------------------------
+# Arts Section
+
+arts:
+- {name: Happy Bush, folder: 'art-1'}

@@ -1,0 +1,13 @@
+<section class="art-section">
+  <h3 id="arts">Arts &amp; Crafts</h3>
+
+  {% for art in site.data.settings.arts %}
+    <div class="art-container">
+      <a href="" class="art-unit" style="background-image: url(/assets/img/arts/{{ art.folder }}/thumb.jpg)">
+        <div class="art-overlay">
+          <strong>{{ art.name }}</strong>
+        </div> <!-- end art overlay -->
+      </a> <!-- end art unit -->
+    </div> <!-- end art container -->
+    {% endfor %}
+</section> <!-- end arts section -->
