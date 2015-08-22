@@ -1,10 +1,17 @@
-section.articles
+section.articles#blog
   .flex.flex--center
-
     .col-50
-      p test
+      .article-wrap
+        {% for post in site.posts limit: 12 %}
+        a(href="{{post.url}}" style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}})").article-thumb
+          .article-meta
+            .name {{post.title}}
+            .date {{post.date | date: "%b %d, %Y"}}
+
+        {% endfor %}
 
     .col-50.flex.flex--center.order-first
       .col-1
-        p.home-lead.outdented ... and gives some website advices
-        a(href="").home-cta All courses
+        .desc-wrap
+          p.home-lead.outdented ... and gives some website advices
+          a(href="").home-cta All courses

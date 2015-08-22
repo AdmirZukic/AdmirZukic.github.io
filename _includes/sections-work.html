@@ -1,15 +1,29 @@
-<section class="alt-section">
+<section class="alt-section section-work">
   <h3 id="work">Work</h3>
 
-    <div class="thumb-container">
+  <div class="work-belt">
+    <div class="thumb-wrap">
+      <div class="thumb-container">
 
-      {% for project in site.data.settings.projects %}
-        <a href="../work/proj-1.html" class="thumb-unit" style="background-image: url(/assets/img/work/{{ project.folder }}/thumb.jpg)">
-          <div class="thumb-overlay">
-            <strong>{{ project.name }}</strong>
-          </div> <!-- end thumb overlay -->
-        </a> <!-- end thumb unit -->
+        {% for project in site.data.settings.projects %}
+          <div class="thumb-unit" data-folder="{{ project.folder }}" style="background-image: url(/assets/img/work/{{ project.folder }}/thumb.jpg)">
+            <div class="thumb-overlay">
+              <strong>{{ project.name }}</strong>
+            </div> <!-- end thumb overlay -->
+          </div> <!-- end thumb unit -->
 
-      {% endfor %}
-    </div> <!-- end thumb container -->
+        {% endfor %}
+      </div> <!-- end thumb container -->
+    </div> <!-- end thumb wrap -->
+
+    <div class="work-wrap">
+      <div class="work-container">
+      <div class="work-return">{% include icons/icon-back.html %}</div>
+      <h4 class="project-title">AtZiMedia Logo Rework</h4>
+      <div class="project-load"></div>
+
+      </div> <!-- end work container -->
+    </div> <!-- end work wrap -->
+
+  </div> <!-- end work belt -->
 </section>

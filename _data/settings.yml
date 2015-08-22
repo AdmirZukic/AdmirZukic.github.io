@@ -52,7 +52,7 @@ skills:
 # Work Section
 
 projects:
-- {name: AtZiMedia Logo Concept, folder: 'proj-1', file: 'work/proj-1.html'}
+- {name: AtZiMedia Logo Concept, folder: 'proj-1'}
 - {name: Leptirela Logo Concept, folder: 'proj-2'}
 - {name: Kajak Kanu Klub Ključ Website Maintenance, folder: 'proj-3'}
 - {name: GetSetPet UK Website Maintenance, folder: 'proj-4'}
